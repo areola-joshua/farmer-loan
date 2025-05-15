@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTech Loan Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#borrow"><i class="fas fa-hand-holding-usd"></i> Borrow</a></li>
+            <li><a href="#testimonials"><i class="fas fa-comments"></i> Testimonials</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>AgriTech Farm Loans</h1>
+            <p>Empowering Farmers with Flexible Financing Solutions</p>
+            <a href="#borrow" class="cta-button">Apply Now <i class="fas fa-arrow-right"></i></a>
+        </div>
+        
+        <div class="app-description">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-laptop"></i></div>
+                    <h3>1. Apply Online</h3>
+                    <p>Fill our simple eligibility form</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>2. Get Approved</h3>
+                    <p>Instant eligibility decision</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon"><i class="fas fa-tractor"></i></div>
+                    <h3>3. Receive Funds</h3>
+                    <p>Money directly to your account</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <h2>What Our Farmers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <div class="quote"><i class="fas fa-quote-left"></i></div>
+                <p>"AgriTech loan helped me expand my farm when I needed it most. The process was so simple!"</p>
+                <div class="author">- John K., Maize Farmer</div>
+            </div>
+            <div class="testimonial">
+                <div class="quote"><i class="fas fa-quote-left"></i></div>
+                <p>"As a first-time borrower, I was nervous, but the team made everything clear and easy."</p>
+                <div class="author">- Sarah M., Poultry Farmer</div>
+            </div>
+        </div>
+        
+        <div class="marquee">
+            <div class="marquee-content">
+                <span><i class="fas fa-seedling"></i> Fast Approval</span>
+                <span><i class="fas fa-percentage"></i> Low Interest Rates</span>
+                <span><i class="fas fa-clock"></i> Flexible Repayment</span>
+                <span><i class="fas fa-headset"></i> 24/7 Support</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Borrow Loan Section -->
+    <section id="borrow" class="section borrow">
+        <h2><i class="fas fa-hand-holding-usd"></i> Borrow Loan</h2>
+        <form id="loanForm">
+            <div class="form-group">
+                <label for="school"><i class="fas fa-graduation-cap"></i> Attended School?</label>
+                <select id="school">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="plots"><i class="fas fa-map-marked-alt"></i> Number of Plots</label>
+                <input type="number" id="plots" min="0" value="0">
+            </div>
+            <div class="form-group">
+                <label for="years"><i class="fas fa-calendar-alt"></i> Years of Farming Experience</label>
+                <input type="number" id="years" min="0" value="0">
+            </div>
+            <div class="form-group">
+                <label for="paidLoans"><i class="fas fa-money-bill-wave"></i> Previous Loans Paid?</label>
+                <select id="paidLoans">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="safeArea"><i class="fas fa-warehouse"></i> Safe Storage Area?</label>
+                <select id="safeArea">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="age"><i class="fas fa-user"></i> Age</label>
+                <input type="number" id="age" min="15" value="15">
+            </div>
+            <button type="submit" class="btn">
+                <i class="fas fa-check"></i> Check Eligibility
+            </button>
+        </form>
+        <div id="result" class="result"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> +1 (800) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> loans@agritech.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Farm Road, Agriculture City</p>
+            </div>
+            <div class="contact-hours">
+                <h3><i class="fas fa-clock"></i> Working Hours</h3>
+                <p>Monday - Friday: 8am - 6pm</p>
+                <p>Saturday: 9am - 2pm</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3><i class="fas fa-leaf"></i> AgriTech</h3>
+                <p>Supporting farmers since 2010</p>
+            </div>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AgriTech Loan Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
